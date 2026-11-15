@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Detopia | Contact Us</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header and navigation -->
+    <header class="header">
+        <a href="./index.html" class="logo">CAFE <span>DETOPIA</span></a>
+
+        <button class="menu-button" id="menuButton" aria-label="Open navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="navigation" id="navigation">
+            <a href="./index.html">Home</a>
+            <a href="./menu.html">Menu</a>
+            <a href="./contact.html" class="active">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Minimal contact page heading -->
+        <section class="contact-heading">
+            <p class="small-heading">WE WOULD LOVE TO HEAR FROM YOU</p>
+            <h1>Get in <span>Touch.</span></h1>
+            <p>Have a question or feedback? Send us a message.</p>
+        </section>
+
+        <!-- Contact details and message form -->
+        <section class="contact-section">
+            <div class="contact-info">
+                <h2>Contact <span>Details</span></h2>
+                <p class="contact-description">
+                    Whether you have a question about our menu or simply want to say hello,
+                    feel free to contact us.
+                </p>
+
+                <div class="contact-detail">
+                    <h3>Address</h3>
+                    <p>Add your cafe address here</p>
+                </div>
+
+                <div class="contact-detail">
+                    <h3>Phone</h3>
+                    <p>Add your cafe phone number here</p>
+                </div>
+
+                <div class="contact-detail">
+                    <h3>Email</h3>
+                    <p>Add your cafe email here</p>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <label for="visitorName">Your Name</label>
+                <input type="text" id="visitorName" name="visitorName"
+                       placeholder="Enter your name" required>
+
+                <label for="visitorEmail">Your Email</label>
+                <input type="email" id="visitorEmail" name="visitorEmail"
+                       placeholder="Enter your email" required>
+
+                <label for="visitorMessage">Your Message</label>
+                <textarea id="visitorMessage" name="visitorMessage" rows="5"
+                          placeholder="Write your message..." required></textarea>
+
+                <button type="submit" class="contact-submit">Send Message</button>
+                <p class="form-status" id="formStatus" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>CAFE DETOPIA</p>
+        <p>Making your everyday moments a little better.</p>
+        <p class="copyright">© 2026 Cafe Detopia. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
